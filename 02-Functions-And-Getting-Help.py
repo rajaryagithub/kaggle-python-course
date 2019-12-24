@@ -95,3 +95,16 @@ print(
     squared_call(mult_by_five, 1),
     sep='\n', # '\n' is the newline character - it starts a new line
 )
+
+
+# # Functions that operate on other functions are called "Higher order functions."
+def mod_5(x):
+    return x % 5
+
+print(
+    'Which number is biggest?',
+    max(100, 51, 14),
+    'Which number is the biggest modulo 5?',
+    max(100, 51, 14, key=mod_5),
+    sep='\n'
+)
