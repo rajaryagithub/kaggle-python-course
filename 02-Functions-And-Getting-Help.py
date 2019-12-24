@@ -1,10 +1,12 @@
 # # Help function to help other functions
 # Displays header and short description
+print("Help function to help other functions")
 help(abs)
 help(round)
 
 
 # # Defining a function to find least difference
+print("Defining a function example")
 def least_difference(a, b, c):
     diff1 = abs(a - b)
     diff2 = abs(b - c)
@@ -25,6 +27,7 @@ help(least_difference)
 # # Docstrings : The docstring is a triple-quoted string
 # (which may span multiple lines) that comes immediately after the header of a function.
 # When we call help() on a function, it shows the docstring.
+print("Docstrings example")
 def least_difference(a, b, c):
     """Return the smallest difference between any two numbers
     among a, b and c.
@@ -43,6 +46,7 @@ help(least_difference)
 
 # # Functions that don't return
 # Return value from these functions are None which is null in other languages like java
+print("None returning functions example")
 def least_difference(a, b, c):
     """Return the smallest difference between any two numbers
     among a, b and c.
@@ -64,10 +68,12 @@ mystery = print()
 print(mystery)
 
 # # Default arguments
+print("Default arguments example")
 print(1, 2, 3, sep=' < ')
 
 
 # # Defining default argument
+print("How to define default argument")
 def greet(who="Colin"):
     print("Hello, ", who)
 
@@ -79,6 +85,7 @@ greet("world")
 
 
 # # Functions Applied to Functions
+print("Functions Applied to Functions example")
 def mult_by_five(x):
     return x * 5
 
@@ -98,6 +105,7 @@ print(
 
 
 # # Functions that operate on other functions are called "Higher order functions."
+print("Higher order functions example")
 def mod_5(x):
     return x % 5
 
